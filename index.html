@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome / Willkommen</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f7f9fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    text-align: center;
+  }
+  .welcome {
+    font-size: 2em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+    max-width: 90%;
+  }
+  .welcome-sub {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  .select-language {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  .lang-options {
+    display: flex;
+    gap: 30px;
+  }
+  .lang-option {
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .lang-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  .flag {
+    font-size: 2.5em;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .label {
+    font-size: 1em;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+  <div class="welcome">Welcome to my resume / Willkommen zu meinem Lebenslauf</div>
+  <div class="welcome-sub">Thank you and have a wonderful day! / Vielen Dank und einen schönen Tag!</div>
+  <div class="select-language">Select Language / Sprache wählen</div>
+  <div class="lang-options">
+    <a href="/en/" class="lang-option">
+      <span class="flag">🇬🇧</span>
+      <span class="label">English</span>
+    </a>
+    <a href="/de/" class="lang-option">
+      <span class="flag">🇩🇪</span>
+      <span class="label">Deutsch</span>
+    </a>
+  </div>
+</body>
+</html>
